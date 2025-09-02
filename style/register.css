@@ -1,0 +1,152 @@
+/* Reset & Base Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #161616;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 1px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  width: 125px;         
+  height: auto;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  width: 1000px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.kiri {
+  flex: 1;
+  background: #161616;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kiri h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.kiri p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #757575;
+}
+
+.kiri p a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 15px;
+  background: #444;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: #710014;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #830e0e;
+}
+
+.kiri > p:last-of-type {
+  margin: 15px 0 10px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-login button {
+  background: #333;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-login button:hover {
+  background: #555;
+}
+
+.social-login img {
+  width: 20px;
+  height: 20px;
+}
+
+.kanan {
+  flex: 1;
+  background: linear-gradient(180deg, #D70026, #161616);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.kanan h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.kanan p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ddd;
+}
