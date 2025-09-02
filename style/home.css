@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', 'Nunito', 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #161616;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #710014, #bd0023);
+    position: sticky;
+    top: 0;
+}
+
+.kiri{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin: 18px 20px;
+}
+
+#logo_img{
+    width: 60px;
+}
+
+#logo_link,
+#menu{
+    text-decoration: none;
+}
+
+#menu{
+    color: #ffffff;
+    margin: 0 2px;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.3s ease ;
+}
+
+#menu.active{
+    background-color: #ffffff;
+    color: #161616;
+}
+
+#menu:hover{
+    background-color: #ffffff;
+    color: #161616;
+}
+
+.kanan{
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 6px 16px;
+    width: 400px;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.search button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tombol user */
+.account button {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Card dropdown */
+.account_drop {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    pointer-events: none; /* hidden by default */
+    z-index: 100;
+}
+
+/* Saat aktif */
+.account_drop.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Username kiri */
+.account_drop .username {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.account_drop .username h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.account_drop .username p {
+    margin: 2px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Avatar kanan */
+.account_drop .avatar {
+    font-size: 32px;
+    color: #333;
+}
+
+.other_menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.dropdown_menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    right: 8px;
+    top: 35px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+    pointer-events: none;
+    z-index: 100;
+}
+
+.dropdown_menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #161616;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.dropdown_menu a:hover {
+    background: #c2c2c292;
+}
+
+.atas {
+    border-bottom: 1px solid #161616;
+    padding: 6px;
+}
+
+.bawah{
+    padding: 6px;
+}
+
+#logout_btn{
+    background-color: #d60128;
+    color: #ffffff;
+    text-align: center;
+}
+
+.dropdown_menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.gambar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gambar .img_web {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.isi{
+    margin: 0 40px;
+}
+
+.batas{
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 30px;
+}
+
+.menu_tambahan{
+    background: linear-gradient(to bottom, #a18266 50%, #222222c5);
+    margin: 30px auto;
+    margin-bottom: 0;
+    padding: 27px;
+    width: 850px;
+    border-radius: 10px;
+}
+
+.judul h1{
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu_alternatif{
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    height: 180px;
+    cursor: pointer;
+    transition: 0.3s ease   ;
+}
+
+#menu_alternatif i{
+    font-size: 55px;
+    margin-bottom: 40px;
+}
+
+#menu_alternatif p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#menu_alternatif:hover{
+    scale: 1.1;
+    box-shadow: 0 0 10px #161616;
+}
+
+.footer{
+    background: linear-gradient(to bottom, #161616 50%, #8f8b8b54);
+    margin-top: 20px;
+    padding: 45px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.apps,
+.contact{
+    margin: 10px 0;
+}
+
+.apps a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 27px;
+}
