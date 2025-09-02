@@ -1,0 +1,40 @@
+.title {
+font-weight: bolder;
+    font-size:12px;
+padding-left: 120px;
+padding-top: 60px;
+}
+.title h1 {
+    color: #FFFFFF;
+}
+
+.title h2 {
+color: #FFFFFF;
+opacity: 0.65;
+}
+    .progress-wrapper {
+      width: 80%;
+      margin: 20px 0;
+    }
+
+    .progress-text {
+      text-align: right;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .progress-container {
+      width: 100%;
+      background: rgba(113, 0, 20, 0.25); /* #710014 dengan opacity 25% */
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 30px;
+      width: 0%;
+      background: #710014; /* Full warna tanpa opacity */
+      border-radius: 20px;
+      transition: width 0.3s ease-in-out;
+    }
